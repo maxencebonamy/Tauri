@@ -41,6 +41,7 @@ java-build:
     name: "Gradle artifacts from $CI_PROJECT_NAME on $CI_COMMIT_REF_SLUG"
     paths:
       - $CI_PROJECT_DIR/build/libs/*.war
+      - backend/build/classes/
     expire_in: 1 day
     when: always
   cache:
@@ -58,8 +59,7 @@ quality-dev:
   script:
     - cd backend
     - chmod +x ./gradlew
-    # - ./gradlew --no-daemon test 
-    - ./gradlew --no-daemon sonar -Dsonar.projectKey=Team4_2024_DevBranch_Project -Dsonar.host.url=http://INTERNAL_IP:9000/sonar -Dsonar.login=REDACTED
+    - ./gradlew --no-daemon sonar -Dsonar.projectKey=Team4_2024_DevBranch_Project -Dsonar.host.url=http://INTERNAL_IP:9000/sonar -Dsonar.login=REDACTED -Dsonar.java.binaries=build/classes/java/main
   artifacts:
     paths:
       - $CI_PROJECT_DIR/build/libs/*.war
