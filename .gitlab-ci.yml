@@ -58,7 +58,8 @@ quality-dev:
   script:
     - cd backend
     - gradle --no-daemon test
-    - gradle --no-daemon sonarqube -Dsonar.projectName=Team4_DevBranch -Dsonar.projectKey=Team4_2024_DevBranch_Project -Dsonar.host.url=http://INTERNAL_IP:9000/sonar -Dsonar.login=REDACTED
+    - gradlew --no-daemon sonar -Dsonar.projectKey=Team4_2024_DevBranch_Project -Dsonar.host.url=http://INTERNAL_IP:9000/sonar -Dsonar.login=REDACTED
+    # - gradle -sonarqube -Dsonar.projectName=Team4_DevBranch -Dsonar.projectKey=Team4_2024_DevBranch_Project -Dsonar.host.url=http://INTERNAL_IP:9000/sonar -Dsonar.login=REDACTED
   artifacts:
     paths:
       - $CI_PROJECT_DIR/build/libs/*.war
