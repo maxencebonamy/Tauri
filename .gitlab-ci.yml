@@ -79,8 +79,8 @@ quality-prod:
   image: gradle:8.4-jdk17
   script:
     - cd backend
-    - gradle --no-daemon clean test
-    - gradle --no-daemon sonarqube -Dsonar.projectName=Team4_MasterBranch -Dsonar.projectKey=Team4_2024_MasterBranch_Project -Dsonar.host.url=http://INTERNAL_IP:9000/sonar -Dsonar.login=REDACTED
+    - chmod +x ./gradlew
+    - ./gradlew --no-daemon sonar -Dsonar.projectKey=Team4_2024_MasterBranch_Project -Dsonar.host.url=http://INTERNAL_IP:9000/sonar -Dsonar.login=REDACTED -Dsonar.java.binaries=build/classes/java/main
   artifacts:
     paths:
       - $CI_PROJECT_DIR/build/libs/*.war
