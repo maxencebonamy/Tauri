@@ -61,7 +61,7 @@ quality-dev:
     - cd backend
     - chmod +x ./gradlew
     # - ./gradlew --no-daemon test  # Problème car pas accès DB
-    - ./gradlew --no-daemon sonar -Dsonar.projectKey=Team4_2024_DevBranch_Project -Dsonar.host.url=http://INTERNAL_IP:9000/sonar -Dsonar.login=REDACTED -Dsonar.java.binaries=build/classes/java/main
+    - ./gradlew --no-daemon sonar -Dsonar.projectKey=Team4_2024_DevBranch_Project -Dsonar.host.url=http://INTERNAL_IP:9000/sonar -Dsonar.login=REDACTED -Dsonar.java.binaries=build/classes/java/main --debug
   artifacts:
     paths:
       - $CI_PROJECT_DIR/build/libs/*.war
