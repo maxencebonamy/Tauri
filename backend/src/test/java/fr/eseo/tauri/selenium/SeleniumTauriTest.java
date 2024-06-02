@@ -19,7 +19,7 @@ import java.util.logging.Level;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class SeleniumTauriTest {
-        private static final String URL = System.getProperty("selenium.server.url", "https://INTERNAL_IP/");
+        private static final String URL = System.getProperty("selenium.server.url", "http://INTERNAL_IP/");
         private static final String LOGIN = "p.l@tauri.com";
         private static final String PASSWORD = "pl";
         private static final String TITLE = "Bienvenue sur Tauri !";
