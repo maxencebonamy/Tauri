@@ -26,11 +26,11 @@ public class UserSeeder {
 		userRepository.save(userPL);
 
 		var userSS = new User("s.s@tauri.com");
-		userSS.name("CLAVREUL Michael");
+		userSS.name("DOE Supervisor");
 		userRepository.save(userSS);
 
 		var userOL = new User("o.l@tauri.com");
-		userOL.name("ROUSSEAU Sophie");
+		userOL.name("DOE Leader");
 		userRepository.save(userOL);
 
 		var userTC = new User("t.c@tauri.com");

@@ -13,6 +13,16 @@ export default defineConfig({
 		],
 		alias: {
 			"@": path.resolve(__dirname, "./src")
+		},
+		coverage: {
+			provider: "v8",
+			include: [
+				"src/utils/array/array.util.ts",
+				"src/utils/crypt/crypt.util.ts",
+				"src/utils/date/date.util.ts",
+				"src/utils/string/string.util.ts",
+				"src/services/**/**.service.ts"
+			]
 		}
 	}
 })

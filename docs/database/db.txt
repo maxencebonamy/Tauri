@@ -1,0 +1,143 @@
+Enum UserType {
+  OPTION_LEADER
+  PROJECT_LEADER
+  SUPERVISOR
+  STUDENT
+  COACH
+}
+
+Enum Gender {
+  MALE
+  FEMALE
+}
+
+Enum ProjectPhase {
+  COMPOSING
+  PREPUBLISHED
+  PUBLISHED
+}
+
+Enum SprintEndType {
+  NULL
+}
+
+Enum GradeScaleType {
+  PRESENTATIONS
+  SPRINT_CONFORMITY
+  TECHNICAL_SOLUTION
+  PROJECT_MANAGEMENT
+}
+
+Enum FlagType {
+  REPORT
+  CONFIRM
+}
+
+Table Project {
+  id int [primary key]
+  nbTeams int
+  genderRatio float
+  nbSprints int
+  phase ProjectPhase
+}
+
+Table User {
+  id int [primary key]
+  name string
+  email string [unique]
+  password string
+  type UserType
+}
+
+Table Student {
+  id int [primary key]
+  gender Gender
+  bachelor bool
+  role string
+  userId int
+  teamId int
+}
+Ref: Student.userId > User.id
+Ref: Student.teamId > Team.id
+
+Table Team {
+  id int [primary key]
+  name string
+  projectId int
+}
+Ref: Team.projectId > Project.id
+
+Table Sprint {
+  id int [primary key]
+  startDate date
+  endDate date
+  endType SpringEndType
+}
+
+Table PresentationOrder {
+  studentId int [primary key]
+  sprintId int [primary key]
+  value int
+}
+Ref: PresentationOrder.studentId > Student.id
+Ref: PresentationOrder.sprintId > Sprint.id
+
+Table Grade {
+  id int [primary key]
+  value int
+  comment string
+  authorId int
+  typeId int
+  studentId int
+  teamId int
+}
+Ref: Grade.typeId > GradeType.id
+Ref: Grade.studentId > Student.id
+Ref: Grade.teamId > Team.id
+Ref: Grade.authorId > User.id
+
+Table GradeType {
+  id int [primary key]
+  name string
+  factor float
+  group bool
+  scaleId int
+}
+Ref: GradeType.scaleId > GradeScale.id
+
+Table GradeScale {
+  id int [primary key]
+  type GradeScaleType
+  content string
+}
+
+Table Flag {
+  id int [primary key]
+  description string
+  type FlagType
+  authorId int
+}
+Ref: Flag.authorId > User.id
+
+Table Comment {
+  id int [primary key]
+  content string
+  feedback bool
+  authorId int
+  teamId int
+}
+Ref: Comment.authorId > User.id
+Ref: Comment.teamId > Team.id
+
+Table Bonus {
+  id int [primary key]
+  authorId int
+  gradeId int
+  value float
+  comment string
+  limited bool
+  confirmed bool
+}
+Ref: Bonus.authorId > User.id
+Ref: Bonus.gradeId > Grade.id
+

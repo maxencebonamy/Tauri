@@ -1,0 +1,117 @@
+Ge.1. As [IU] I must be able to enter my credentials to connect to the application.
+Ge.2. As [IU] I must be able to access only the resources / information that I have read access rights.
+Ge.3. As [IU] I must be able to modify only the resources / information that I have write access rights.
+Ge.4. As [SA] I could be able to connect the system to ESEO’s LDAP to authenticate the users.
+Ge.5. As [IU] I must be able to log off of the system.
+
+Ge.6. As [IU] I could be able to import a key for signing information.
+Ge.7. As [IU] I could be able to generate a key for signing information.
+
+
+
+
+Pr.1. As [OL] I must be able to import a list of students who have chosen the LD option
+Pr.2. As [PL] I must be able to import a list of students who have chosen the LD option
+Pr.3. As [OL] I should be able to modify the list of students who have chosen the LD option
+Pr.4. As [PL] I should be able to modify the list of students who have chosen the LD option
+Pr.5. As [PL] I must be able to export the list of students in a format that can be opened within a spreadsheet
+Pr.6. As [PL] I must be able to import a spreadsheet (based upon the exported spreadsheet) which also contains columns with the student’s grades from multiple subjects
+Pr.7. As [PL] I must be able to add coefficients to the different grades
+Pr.8. As [PL] I must be able to see the data on the different students (name and grades)
+Pr.9. As [OL] I must be able to see the data on the different students (name and grades)
+Pr.10. As [PL] I must be able to define the number of teams that should be created
+Pr.11. As [PL] I must be able to define the ratio Male / Female of team members
+Pr.12. As [PL] I must be able to place students into teams automatically based upon the criteria (number of teams, ratio M/F, average grade of the teams)
+Pr.13. As [SS] I should be able to preview the team line-ups (with appropriate criteria)
+Pr.14. As [SS] I should be able to flag possible problems within the team line-ups
+Pr.15. As [SS] I should be able to add a comment why I have flagged a team’s line-up
+Pr.16. As [PL] I should be able to see any flags that have been defined on the team line-ups
+Pr.17. As [PL] I must be able to swap students between teams after the teams are automatically created to refine the different team line-ups
+Pr.18. As [PL] I should be able to see when a criterion is not validated
+Pr.19. As [PL] I should be able to drag students between teams to refine the team line-ups
+Pr.20. As [SS] I must be able to validate team line ups
+Pr.21. As [PL] I must be able to pre-publish the different team line ups
+Pr.22. As [OS] I must be able to see the line-up of my team
+Pr.23. As [OS] I should be able to see the composition of the different teams
+Pr.24. As [OS] I must be able to flag possible problems within my team’s line-up
+Pr.25. As [OS] I must be able to add a comment why I have flagged a team’s line-up with a possible solution
+Pr.26. As [OS] I must be able to validate a possible solution which affects my team
+Pr.27. As [PL] I must be able to validate a possible line-up change
+Pr.28. As [OS] I should be able to see that a line-up change has taken place
+Pr.29. As [PL] I must be able to allocate an [SS] to a Team
+Pr.30. As [PL] I must be able to name a Team
+Pr.31. As [PL] I must be able to publish the different team line-ups
+Pr.32. As [OL] I must be able to define the number of sprints for the project
+Pr.33. As [PL] I must be able to define the number of sprints for the project
+Pr.34. As [OL] I must be able to define the end of sprint protocol (date, type of sprint end, Sprint Review or Presentation)
+Pr.35. As [PL] I must be able to define the end of sprint protocol (date, type of sprint end, Sprint Review or Presentation)
+Pr.36. As [PL] I should be able to create a grade scale for the presentations
+Pr.37. As [PL] I should be able to create a grade scale for the sprint conformity
+Pr.38. As [PL] I should be able to create a grade scale for the technical solution
+Pr.39. As [PL] I should be able to create a grade scale for the project management
+Pr.40. As [PL] I must be able to publish the grade scale(s)
+Pr.41. As [OS] I must be able to see the relevant information for my team (name, [SS], members)
+Pr.42. As [OS] I must be able to see the sprint protocols
+Pr.43. As [SS] I must be able to see the relevant information for my team (name, [SS], members, grades, criteria used in creating the teams)
+Pr.44. As [SS] I must be able to see the sprint protocols
+Pr.45. As [SS] I should be able to see the relevant information for any team
+
+Og.1. As [TM] I must be able to grade the other team’s overall performance during the presentations
+Og.2. As [TM] I must be able to publish the running order for a presentation before the timetabled session
+Og.3. As [SS] I must be able to grade the team’s presentation’s support material
+Og.4. As [SS] I must be able to grade the team’s presentation’s content
+Og.5. As [SS] I must be able to grade the individual student’s performance
+Og.6. As [SS] I should be able to add a comment for each student
+Og.7. As [TC] I must be able to grade the team’s presentation’s support material
+Og.8. As [TC] I must be able to grade the team’s presentation’s content
+Og.9. As [TM] I must be able to see the detail of my grade (average grade given by other students, average grade given by [TC], average grade given by [SS])
+Og.10. As [TM] I should be able to see the comments made about my performance
+Og.11. As [TM] I must be able to see the grades of the other member’s of my team
+Og.12. As [TM] I should be able to see the average grade of the other team’s (not the individual grades)
+Og.13. As [SS] I must be able to see the individual grades (including all the details) of all the students
+Og.14. As [SS] I must be able to see the grades (including all the details + comments) of the teams
+Og.15. As [IU] I must be able to see information that will help me choose the correct grade (eg Grade Scale)
+
+Wg.1. As [SS] I must be able to grade my team’s sprint conformity
+Wg.2. As [SS] I must be able to grade my team’s technical solution
+Wg.3. As [SS] I must be able to grade my team’s project management
+Wg.4. As [TC] I must be able to leave comments on the team’s technical solution
+Wg.5. As [TC] I must be able to leave comments on the team’s project management
+Wg.6. As [SS] I must be able to see the comments left by the [TC] for my team
+Wg.7. As [SS] I must be able to give an unlimited bonus / malus to each member of my team
+Wg.8. As [SS] I must be able to leave a reason for my choice of bonus / malus
+Wg.9. As [TM] I must be able to give a limited bonus / malus to the members of my team
+Wg.10. As [TM] I must be able to validate the limited bonus / malus given by a team member
+Wg.11. As [TM] I must be informed when a limited bonus / malus has been given
+Wg.12. As [TM] I must be informed if the limited bonus / malus given respects the rules
+Wg.13. As [TM] I must be informed when all members of the team have given their accord to the limited bonus / malus
+Wg.14. As [SS] I must be informed of any changes made to the limited bonus / malus
+Wg.15. As [SS] I must be able to validate the limited bonus / malus
+Wg.16. As [SS] I must be able to validate the individual grades of the [TM]in my team
+Wg.17. As [TM] I must be able to see my individual grade (along with all the details limited bonus / malus, unlimited bonus / malus + reason) after they have been validated by the [SS]
+Wg.18. As [PL] I must be able to see the detail of all grades (individual or team)
+Wg.19. As [OL] I must be able to see the detail of all grades (individual or team)
+
+Wg.20. As [TM] I could be able to use my key to sign the limited bonus/malus
+Wg.21. As [SS] I could be able to verify the keys used to sign the limited bonus/malus for my team
+Wg.22. As [SS] I could be able to use my key to sign the unlimited bonus/malus for my team
+Wg.23. As [PL] I could be able to verify the keys used to sign the limited bonus/malus for all teams
+Wg.24. As [PL] I could be able to verify the keys used to sign the unlimited bonus/malus for all teams
+Wg.25. As [SS] I could be able to use my key to sign the unlimited bonus/malus for any team
+
+
+Sg.1. As [OS] I must be able to see my grade for the sprint
+Sg.2. As [OS] I must be able to see the calculation used for creating my grade for the sprint
+Sg.3. As [SS] I must be able to see the grades of all the students for the sprint
+Sg.4. As [SS] I must be able to see the calculation used for a selected [TM]for their grade for the sprint
+Sg.5. As [PL] I must be able to export the individual grades in a format that can be read by a spreadsheet
+Sg.6. As [OL] I must be able to export the individual grades in a format that can be read by a spreadsheet
+
+Fb.1. As [TC] I must be able to enter my feedback for the different teams
+Fb.2. As [TC] I must be able to enter comments on the different teams
+Fb.3. As [TM] I must be able to read the feedback given by the coach technique
+Fb.4. As [SS] I must be able to read the feedback and the comments made by the coach technique
+Fb.5. As [SS] I must be able to enter my feedback for the different teams
+Fb.6. As [SS] I must be able to enter comments on the different teams
+Fb.7. As [TC] I must be able to read the feedback and the comments made by the [TC] or by the [SS]
+Fb.8. As [TM] I must be able to read the feedback given by the [SS]

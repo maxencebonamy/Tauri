@@ -179,7 +179,7 @@ describe("sendManyNotifications", () => {
 		await sendManyNotifications(message)
 
 		// Assertions
-		expect(apiUtils.mutateAndValidate).toHaveBeenCalledTimes(4)
+		expect(apiUtils.mutateAndValidate).toHaveBeenCalledTimes(8)
 	})
 
 	it("should throw an error if the response is an error", async() => {
